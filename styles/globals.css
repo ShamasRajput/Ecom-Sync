@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'boldwide';
+  src: url('/fonts/Hubot-Sans-BoldWide.ttf');
+}
+
+@font-face {
+  font-family: 'extraboldwide';
+  src: url('/fonts/Hubot-Sans-ExtraBoldWide.ttf');
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url('/fonts/Hubot-Sans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'mediumwide';
+  src: url('/fonts/Hubot-Sans-MediumWide.ttf');
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url('/fonts/Hubot-Sans-Regular.ttf');
+}
+
+::selection{
+  background-color: #F37058;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.diagonal {
+  --skew-angle: -5deg;
+  --background: linear-gradient(
+                  44deg, 
+                  #F37058, 
+                  #7F9CC2,
+                  #E25F63 
+                );
+
+  position: relative;
+  isolation: isolate;
+}
+html {
+  scroll-behavior: smooth;
+}
+.diagonal::after {
+  content: '';
+  background: rgb(243, 243, 243);
+  border-bottom: 2px dashed black;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(var(--skew-angle));
+}
