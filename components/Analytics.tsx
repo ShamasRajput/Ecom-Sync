@@ -42,7 +42,7 @@ const Analytics = () => {
                                 duration: 0.5
                             }
                         }}
-                        className='font-extraBoldWide text-[32px] md:text-[48px] lg:ext-[72px]'>PKR 150K+</motion.p>
+                        className='font-extraBoldWide text-[32px] md:text-[48px] lg:ext-[72px]'>USD 100K+</motion.p>
                     <motion.p
                         initial={{
                             opacity: 0, translateX: 20

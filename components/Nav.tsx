@@ -33,7 +33,7 @@ const Nav = () => {
         <p>Ecom</p>
         <p className='text-end'>Sync</p>
       </div>
-      {/* <Image className='cursor-pointer' src={"/assets/logo.png"} alt="DigitallyServed" width={145} height={48} /> */}
+      {/* <Image className='cursor-pointer' src={"/logo.png"} alt="EcomSync" width={145} height={48} /> */}
       {/* <div className='bg-red-200 w-full items-center'> */}
       <ul className='hidden md:flex items-center bg-custom_gray rounded-[100px]'>
         {["home", "about", "services", "work"].map((section) => (
